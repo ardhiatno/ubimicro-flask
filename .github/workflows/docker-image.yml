@@ -3,9 +3,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "ardhiatno-arm-builder" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "ardhiatno-arm-builder" ]
 
 jobs:
 
