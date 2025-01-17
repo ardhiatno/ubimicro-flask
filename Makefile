@@ -4,7 +4,7 @@ IMAGE_NAME = ubi-flask:latest
 CONTAINER_NAME = alpine-flask
 
 build:
-	docker build -t $(IMAGE_NAME) .
+	docker build --no-cache -t $(IMAGE_NAME) .
 
 run:
 	docker run --rm -p 5000:5000 --name $(CONTAINER_NAME) $(IMAGE_NAME)

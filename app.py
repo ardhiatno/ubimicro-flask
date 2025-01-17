@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello Flask from alpine-linux!'
+    return 'Hello Flask!'
 
 @app.route('/genkb/<size>')
 def genkb(size):
