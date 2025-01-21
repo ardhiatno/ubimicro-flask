@@ -21,6 +21,7 @@ RUN yum clean all \
 # clean all
 
 FROM scratch AS image
+MAINTAINER ardhiatno@gmail.com
 ARG WORKDIR
 ARG MICRODIR
 COPY --from=builder ${MICRODIR}/ .
